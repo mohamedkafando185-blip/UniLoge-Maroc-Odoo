@@ -13,7 +13,7 @@
 ## 📋 Présentation du Projet
 UniLoge Maroc intègre de manière fluide plusieurs modules métiers (CRM, Site Web, RH, Comptabilité) pour offrir une expérience numérique fluide, depuis la recherche de logement jusqu’au suivi des paiements.
 
-🔗 [Live Demo](https://147066723.hs-sites-eu1.com/unilogemaroc) | 📄 [Documentation détaillée](#) | 👥 **Équipe : Groupe 7**
+🔗 [Live Demo](https://147066723.hs-sites-eu1.com/unilogemaroc) | 📄 [Documentation détaillée](Rapport_SI.pdf) | 👥 **Équipe : Groupe 7**
 
 ### 🎯 Objectifs & Valeurs Ajoutées
 * **Centraliser** l’offre et la demande en une seule interface.
