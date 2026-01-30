@@ -1,210 +1,136 @@
-# 🛡️ Mini Système de Détection d’Intrusion Réseau (IDS)
-## Observer, comprendre et détecter les comportements suspects sur un réseau
+# 🏠 UniLoge Maroc – Système de Gestion Immobilière Étudiant
 
-> 🎓 Projet académique en **Cybersécurité**  
-> 🧑‍💻 Réalisé avec **Python**  
-> 🖥️ Environnement : Kali Linux  
-> ⏱️ Durée : 1 semaine  
-> 🎯 Projet pédagogique à forte valeur pratique
+![Odoo](https://img.shields.io/badge/Platform-Odoo%2017-875A7B?logo=odoo&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Version%20Acad%C3%A9mique-success)
+![License](https://img.shields.io/badge/License-Éducative-blue)
 
----
+**UniLoge Maroc** est une plateforme web complète de gestion immobilière, spécialement conçue pour faciliter la recherche et la location de logements étudiants au Maroc. Développée sous **Odoo 17**, cette solution automatise et centralise l’ensemble des processus d’une agence immobilière moderne.
 
-## 🌍 Contexte et vision du projet
 
-Aujourd’hui, les réseaux informatiques sont exposés en permanence à des tentatives d’intrusion, de reconnaissance ou de perturbation.  
-Avant même de bloquer une attaque, **la première étape essentielle est de savoir la détecter**.
-
-Ce projet consiste à concevoir un **mini Système de Détection d’Intrusion Réseau (IDS)** capable de surveiller le trafic réseau d’une machine et d’identifier automatiquement certains comportements anormaux.
-
-👉 L’objectif n’est pas de construire un outil industriel complexe, mais de **comprendre concrètement comment fonctionne un IDS**, depuis l’observation du trafic jusqu’à l’analyse des incidents détectés.
 
 ---
 
-## 🧠 Problématique abordée
+## 📋 Présentation du Projet
+UniLoge Maroc intègre de manière fluide plusieurs modules métiers (CRM, Site Web, RH, Comptabilité) pour offrir une expérience numérique fluide, depuis la recherche de logement jusqu’au suivi des paiements.
 
-Ce projet répond à des questions fondamentales en cybersécurité :
+🔗 [Live Demo](https://147066723.hs-sites-eu1.com/unilogemaroc) | 📄 [Documentation détaillée](#) | 👥 **Équipe : Groupe 7**
 
-- Comment surveiller un réseau en temps réel ?
-- Comment reconnaître une activité suspecte sans connaître l’attaque à l’avance ?
-- Comment transformer des données réseau brutes en informations exploitables ?
-- Comment conserver une trace claire et utile des incidents ?
-
-La réponse apportée repose sur une **approche simple, comportementale et progressive**, accessible même à un non-spécialiste.
-
----
-
-## 🎯 Objectifs du projet
-
-### Objectifs principaux
-- Comprendre les bases de la surveillance réseau  
-- Mettre en place une logique de détection simple et efficace  
-- Apprendre à structurer un système d’alerte et de journalisation  
-
-### Objectifs atteints
-| Objectif | Statut |
-|--------|--------|
-| Surveillance du trafic réseau | ✅ Réalisé |
-| Détection de comportements suspects | ✅ Réalisé |
-| Journalisation automatique | ✅ Réalisé |
-| Génération de rapport | ✅ Réalisé |
-| Documentation claire | ✅ Réalisé |
+### 🎯 Objectifs & Valeurs Ajoutées
+* **Centraliser** l’offre et la demande en une seule interface.
+* **Automatiser** les leads, contrats, et la facturation.
+* **Faciliter** la communication (Étudiants / Propriétaires / Gestionnaires).
+* **Traçabilité** totale grâce aux outils RH intégrés.
 
 ---
 
-## 🧩 Principe de fonctionnement (explication simple)
+## 🛠️ Architecture Technique
 
-Le système fonctionne selon une logique très intuitive :
+### 📦 Modules Odoo utilisés
+| Module | Rôle dans le projet |
+| :--- | :--- |
+| **CRM** | Gestion des leads, opportunités et pipeline commercial. |
+| **Site Web** | Portail client et formulaires interactifs. |
+| **Contacts** | Base de données centralisée (Étudiants, Propriétaires). |
+| **Calendrier** | Planification et rappels automatiques des visites. |
+| **Applicéo** | Gestion locative (biens, contrats, loyers, facturation). |
+| **RH** | Gestion des employés, congés, paie et évaluations. |
 
-1. 📡 Il **observe** le trafic réseau
-2. 🔍 Il **analyse** le comportement des machines
-3. 📊 Il **repère les excès ou répétitions anormales**
-4. 🚨 Il **déclenche une alerte**
-5. 📝 Il **enregistre l’incident**
-6. 📄 Il **génère un rapport clair**
+### 🔄 Flux de données
+1. **Acquisition :** Formulaire Web → Création automatique du Contact.
+2. **Vente :** Opportunité CRM → Matching automatique Offre/Demande.
+3. **Opération :** Planification visites (Calendrier).
+4. **Contractualisation :** Signature bail + Facturation (Applicéo).
+5. **Back-Office :** Suivi RH + Paie (Module Employés).
 
-👉 Le système ne bloque rien automatiquement.  
-Il se concentre sur **l’observation, la compréhension et la traçabilité**.
 
----
-
-## 🚨 Types de comportements détectés
-
-### 🟡 Ping Flood (ICMP)
-Un ping flood correspond à l’envoi massif de requêtes réseau dans un court laps de temps.
-
-🔎 **Principe** :  
-Trop de requêtes provenant d’une même source → comportement suspect.
 
 ---
 
-### 🔵 Scan de ports (TCP)
-Avant une attaque, un attaquant cherche souvent à identifier les ports ouverts d’une machine.
+## ✨ Fonctionnalités Clés
 
-🔎 **Principe** :  
-Multiples tentatives de connexion répétées → tentative de reconnaissance réseau.
+### 🧑‍💻 Espace Public (Site Web)
+* Formulaires intelligents pour étudiants et propriétaires.
+* Interface responsive et intuitive.
+* *Capture d'écran suggérée :* `![Site Web](lien_vers_image)`
 
----
+### 📇 Gestion Relation Client (CRM)
+* Filtrage et matching par localisation et budget.
+* Pipeline de vente structuré par étapes.
+* *Capture d'écran suggérée :* `![Dashboard CRM](lien_vers_image)`
 
-## 🏗️ Architecture globale du projet
-Trafic réseau
-↓
-Observation des paquets
-↓
-Analyse du comportement
-↓
-Détection d’anomalies
-↓
-Journalisation
-↓
-Rapport final
+### 📑 Gestion Locative (Applicéo)
+* Génération automatisée des **contrats de bail en PDF**.
+* Facturation récurrente et quittances automatiques.
+* *Capture d'écran suggérée :* `![Contrat PDF](lien_vers_image)`
 
-Cette architecture volontairement simple permet :
-- une compréhension rapide,
-- une maintenance facile,
-- une évolution future du projet.
+### 👥 Gestion des Ressources Humaines
+* Gestion des salaires, congés et absences.
+* Génération automatique des bulletins de paie.
+* *Capture d'écran suggérée :* `![Bulletin de Paie](lien_vers_image)`
 
 ---
 
-## 📁 Organisation du projet
-Le projet est structuré de manière modulaire pour séparer la logique de détection de la génération de rapports :
+## 🧠 Compétences Développées
 
-```text
-Projet_IDS/
-├── mini_ids.py         # Programme principal de surveillance (Moteur Scapy)
-├── generate_report.py   # Script de parsing et génération du rapport final
-├── logs/
-│   └── ids.log         # Journal brut des incidents détectés
-├── rapport_ids.txt     # Rapport de synthèse généré pour l'utilisateur
-└── README.md           # Documentation technique du projet
-```
+### 🔧 Techniques
+- **Paramétrage Odoo :** Automation des workflows et personnalisation de modèles.
+- **Intégration :** Synchronisation CRM ↔ Calendrier ↔ Facturation.
+- **Serveur SMTP :** Configuration Gmail pour envois automatisés.
+- **Data :** Import/Export et structuration de bases de données Excel.
 
-## 📝 Journalisation et rapport
-
-Chaque incident détecté est enregistré avec :
-- la date et l’heure,
-- le type de comportement suspect,
-- la source et la cible,
-- des informations complémentaires.
-
-Un script dédié permet ensuite de **transformer ces données en un rapport lisible**, facilitant :
-- l’analyse post-incident,
-- la compréhension globale des événements,
-- la traçabilité.
+### 🧩 Fonctionnelles & Soft Skills
+- Conception de systèmes intégrés (SI).
+- Travail en équipe agile et gestion des délais (cycle de 1 semestre).
+- Résolution de problèmes techniques complexes.
 
 ---
 
-## ✅ Résultats obtenus
+## 📸 Aperçu du Projet (Captures)
 
-| Critère | Résultat |
-|------|------|
-| Surveillance réseau | ✅ Fonctionnelle |
-| Détection ping flood | ✅ Validée |
-| Détection scan de ports | ✅ Validée |
-| Création des logs | ✅ Fiable |
-| Rapport automatique | ✅ Généré |
+| Dashboard CRM | Formulaire Étudiant |
+|---|---|
+| ![CRM](https://via.placeholder.com/400x250?text=Dashboard+CRM) | ![Form](https://via.placeholder.com/400x250?text=Formulaire+Web) |
 
-📈 Le système s’est montré stable, réactif et suffisamment léger pour fonctionner en continu.
+| Contrat de Bail | Bulletin de Paie |
+|---|---|
+| ![Bail](https://via.placeholder.com/400x250?text=Contrat+PDF) | ![Paie](https://via.placeholder.com/400x250?text=Bulletin+de+Paie) |
 
 ---
 
-## 🧠 Ce que ce projet m’a appris
+## 🚧 Défis Relevés & Solutions
 
-Ce projet a été **très formateur**, bien au-delà de l’aspect purement technique.
-
-### Sur le plan technique
-- Comprendre le fonctionnement réel du trafic réseau  
-- Mieux appréhender les protocoles IP, ICMP et TCP  
-- Découvrir la logique interne d’un IDS  
-- Structurer un programme orienté sécurité  
-
-### Sur le plan méthodologique
-- Penser en termes de **comportement**, pas seulement de règles fixes  
-- Découper un problème complexe en étapes simples  
-- Tester, observer, ajuster et valider  
-
-### Sur le plan personnel
-- Développer une vraie **rigueur** dans l’analyse  
-- Apprendre à documenter clairement un projet technique  
-- Gagner en confiance sur des sujets concrets de cybersécurité  
-
-👉 Ce projet m’a permis de passer d’une vision théorique de la sécurité réseau à une **compréhension pratique et opérationnelle**.
+| Défi | Solution |
+| :--- | :--- |
+| **Synchronisation Web/Contact** | Ajustement des mappings de champs dans Odoo. |
+| **Envoi d’e-mails local** | Configuration d'un relais SMTP Gmail externe. |
+| **Matching Offres/Demandes** | Mise en place de filtres dynamiques et vues segmentées. |
+| **Limites Odoo Community** | Utilisation de champs calculés pour étendre les fonctions. |
 
 ---
 
-## ⚠️ Limites actuelles
-
-| Limite | Impact |
-|------|--------|
-| Détection limitée | Peu de types d’attaques |
-| Seuils fixes | Faux positifs possibles |
-| Mode passif | Pas de blocage automatique |
-| Scope local | Pas de vision réseau globale |
-
-Ces limites sont assumées et font partie de la démarche pédagogique.
+## 📈 Perspectives d’Évolution
+- 🗺️ **Géolocalisation :** Visualisation des logements sur carte.
+- 📱 **App Mobile :** Version dédiée Android/iOS.
+- 🤖 **Chatbot AI :** Support automatique pour les questions fréquentes.
+- ☁️ **Cloud Deployment :** Migration vers Odoo.sh ou AWS.
 
 ---
 
-## 🔮 Perspectives d’amélioration
+## 👨‍🎓 Équipe du Projet – Groupe 7
 
-- Ajout de nouveaux types de détection  
-- Adaptation automatique des seuils  
-- Blocage automatique des sources suspectes  
-- Interface de visualisation des incidents  
-- Stockage des données sur le long terme  
-
----
-
-## 🏁 Conclusion
-
-Ce mini IDS constitue une **excellente introduction pratique à la cybersécurité défensive**.  
-Il démontre qu’avec une approche claire et structurée, il est possible de concevoir un système complet de détection, depuis l’observation réseau jusqu’à l’exploitation des incidents.
-
-🎓 Ce projet reflète :
-- une forte implication personnelle,
-- une volonté de comprendre en profondeur,
-- et une base solide pour évoluer vers des projets plus avancés en **Blue Team, SOC ou cybersécurité réseau**.
+| Membre | Rôle | Contribution |
+| :--- | :--- | :--- |
+| **ABOUBAKAR Abdelaziz** | Formulaires Web | Intégration data et interface publique. |
+| **DIN Isaac Kaougahi** | Gestion Locative | Paramétrage Applicéo et facturation. |
+| **KAFANDO Mohamed** | RH & Paie | Configuration RH et cycles de paie. |
+| **ZOUNGRANA Abdoul G.** | CRM & Automates | Workflow, SMTP et Calendrier. |
 
 ---
 
-### 🔖 Mots-clés
-`Cybersecurity` · `IDS` · `Network Monitoring` · `Python` · `Security Fundamentals`
+## 📬 Contact
+Si ce projet vous intéresse, n'hésitez pas à nous contacter !
+
+**"Du besoin utilisateur à la solution logicielle intégrée – toute la chaîne de valeur dans un seul projet."**
+
+---
+*Ce projet a été réalisé dans un cadre académique (2025–2026) à des fins pédagogiques.*
